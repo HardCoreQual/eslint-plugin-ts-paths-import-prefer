@@ -92,8 +92,6 @@ module.exports.rules = {
             );
             const expectedPath = path.relative(baseUrl, absolutePath);
 
-
-            // if expectedPath is in reversePaths, then we can fix it
             if (reversePaths[normalizeFilename(expectedPath)]) {
               context.report({
                 node,
@@ -103,18 +101,9 @@ module.exports.rules = {
                 },
               });
             }
-
-            // if (source !== expectedPath) {
-            //   context.report({
-            //     node,
-            //     message: `Relative imports are not allowed. Use \`${expectedPath}\` instead of \`${source}\`.`,
-            //     fix: function (fixer) {
-            //       return fixer.replaceText(node.source, `'${expectedPath}'`);
-            //     },
-            //   });
-            }
           }
         }
       }
-    },
+    }
+  },
 };
