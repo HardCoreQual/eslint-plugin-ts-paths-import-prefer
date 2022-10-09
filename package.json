@@ -1,10 +1,13 @@
 {
   "name": "eslint-plugin-ts-paths-import-prefer",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "dependencies": {
-    "json5": "^2.2.1",
-    "typescript": "^4.8.4"
+    "json5": "^2.2.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "description": "Eslint rule enforcing using ts-paths instead of relative imports",
   "license": "MIT",
@@ -15,5 +18,11 @@
     "eslint",
     "imports",
     "eslint-plugin"
-  ]
+  ],
+  "devDependencies": {
+    "@types/eslint": "^8.4.6",
+    "@types/node": "^18.8.3",
+    "eslint": "^8.25.0",
+    "typescript": "^4.8.4"
+  }
 }
