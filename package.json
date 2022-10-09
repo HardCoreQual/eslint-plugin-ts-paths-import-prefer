@@ -11,6 +11,10 @@
   },
   "description": "Eslint rule enforcing using ts-paths instead of relative imports",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HardCoreQual/eslint-plugin-ts-paths-import-prefer"
+  },
   "categories": [
     "Linters"
   ],
