@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ts-paths-import-prefer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "dependencies": {
     "json5": "^2.2.1"

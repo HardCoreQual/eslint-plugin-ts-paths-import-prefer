@@ -4,9 +4,11 @@
 
 ```json
 {
-  "plugins": ["ts-paths-import-prefer"],
+  "plugins": [
+    "eslint-plugin-ts-paths-import-prefer"
+  ],
   "rules": {
-    "ts-paths-import-prefer/ts-paths-import-prefer": "error"
+    "ts-paths-import-prefer/prefer-ts-paths": "error"
   }
 }
 ```
